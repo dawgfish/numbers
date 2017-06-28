@@ -25,10 +25,8 @@ def error():
 
 def main():
 
-    if len(sys.argv) < 2 : error() 
-    userInput = sys.argv[1]
-
     try:
+        userInput = sys.argv[1]
         userInput = int(userInput)
     except:
         error()
